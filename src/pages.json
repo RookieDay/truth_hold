@@ -1,16 +1,59 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ 
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "真自律"
+			}
+		},
+		{
+			"path": "pages/me/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/record/index",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "记录"
+			}
+		},
+		{
+			"path": "pages/opinion/index",
+			"style": {
+				"navigationBarTitleText": "意见反馈"
 			}
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "light",
+		"navigationBarTitleText": "真自律",
+		"navigationBarBackgroundColor": "#EA5149",
 		"backgroundColor": "#F8F8F8"
-	}
+	},
+	"tabBar": {
+		"selectedColor": "#ea5149",
+		"list": [
+			{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/images/danhuang.png",
+			"selectedIconPath": "static/images/danhuang-active.png",
+			"text": "首页"
+			},
+			{
+				"pagePath": "pages/record/index",
+				"iconPath": "static/images/huasheng.png",
+				"selectedIconPath": "static/images/huasheng-active.png",
+				"text": "记录"
+			}, 
+			{
+			"pagePath": "pages/me/index",
+			"iconPath": "static/images/binggan.png",
+			"selectedIconPath": "static/images/binggan-active.png",
+			"text": "我的"
+			}
+		]
+	  }
 }
